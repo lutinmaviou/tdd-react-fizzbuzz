@@ -1,8 +1,5 @@
 const fizzBuzz = (nb) => {
-  if (nb === 1) {
-    return 1;
-  }
-  return 2;
+  return nb;
 };
 
 export default fizzBuzz;
