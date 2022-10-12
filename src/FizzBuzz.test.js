@@ -5,5 +5,5 @@ test('should return 1 if number is 1', () => {
 });
 
 test('should return 2 if number is 2', () => {
-  expect(fizzBuzz(1)).toBe(2);
+  expect(fizzBuzz(2)).toBe(2);
 });
