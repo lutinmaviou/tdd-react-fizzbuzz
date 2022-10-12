@@ -1,7 +1,5 @@
-import React from 'react';
-
-const FizzBuzz = () => {
-  return <h1>FizzBuzz</h1>;
+const fizzBuzz = () => {
+  return;
 };
 
-export default FizzBuzz;
+export default fizzBuzz;

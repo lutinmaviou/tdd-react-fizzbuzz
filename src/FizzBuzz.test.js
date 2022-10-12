@@ -1,10 +1,5 @@
-import { render, screen } from '@testing-library/react';
-import FizzBuzz from './FizzBuzz';
+import fizzBuzz from './fizzBuzz';
 
-test('renders learn react link', () => {
-  render(<FizzBuzz />);
-  const linkElement = screen.getByText(/FizzBuzz/i);
-  expect(linkElement).toBeInTheDocument();
+test('should return 1 if number is 1', () => {
+  expect(fizzBuzz(1)).toBe(1);
 });
-
-test('should ')
