@@ -19,3 +19,7 @@ test('should return Fizz if number is 6', () => {
 test('should return Buzz if number is 5', () => {
   expect(fizzBuzz(5)).toBe("Buzz");
 });
+
+test('should return Buzz if number is 10', () => {
+  expect(fizzBuzz(10)).toBe("Buzz");
+});
