@@ -1,11 +1,8 @@
 import PropTypes from 'prop-types';
 
 const fizzBuzz = (nb) => {
-  if (nb % 3 === 0) {
-    return 'Fizz';
-  } else if (nb % 5 === 0) {
-    return 'Buzz';
-  }
+  if (nb % 3 === 0) return 'Fizz';
+  if (nb % 5 === 0) return 'Buzz';
   return nb;
 };
 
