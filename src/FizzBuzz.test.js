@@ -35,3 +35,7 @@ test('should return FizzBuzz if number is 30', () => {
 test('should return 12 if numbers are 1 and 2', () => {
   expect(fizzBuzz(1, 2)).toBe('12');
 });
+
+test('should return 12Fizz if numbers are 1 to 3', () => {
+  expect(fizzBuzz(1, 3)).toBe('12Fizz');
+});
