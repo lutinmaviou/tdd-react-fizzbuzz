@@ -3,7 +3,7 @@ import evaluateNumber from './evaluateNumber';
 
 const fizzBuzz = (minNb, maxNb) => {
   let result = evaluateNumber(minNb);
-  if (minNb < maxNb) result += evaluateNumber(maxNb);
+  while (minNb < maxNb) result += evaluateNumber(++minNb);
   return result;
 };
 
