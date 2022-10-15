@@ -1,10 +1,8 @@
 import PropTypes from 'prop-types';
-import evaluateNumber from './evaluateNumber';
+import evaluateNumbers from './evaluateNumbers';
 
 const fizzBuzz = (minNb, maxNb) => {
-  let result = evaluateNumber(minNb);
-  while (minNb < maxNb) result += evaluateNumber(++minNb);
-  return result;
+  return evaluateNumbers(minNb, maxNb);
 };
 
 fizzBuzz.PropTypes = {
