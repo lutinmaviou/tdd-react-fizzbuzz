@@ -1,27 +1,9 @@
 import PropTypes from 'prop-types';
+import evaluateNumber from './evaluateNumber';
 
 const fizzBuzz = (minNb, maxNb) => {
-  let result = '';
-  if (minNb % 15 === 0) {
-    result += 'FizzBuzz';
-  } else if (minNb % 3 === 0) {
-    result += 'Fizz';
-  } else if (minNb % 5 === 0) {
-    result += 'Buzz';
-  } else {
-    result += minNb.toString();
-  }
-  if (minNb < maxNb) {
-    if (maxNb % 15 === 0) {
-      result += 'FizzBuzz';
-    } else if (maxNb % 3 === 0) {
-      result += 'Fizz';
-    } else if (maxNb % 5 === 0) {
-      result += 'Buzz';
-    } else {
-      result += maxNb.toString();
-    }
-  }
+  let result = evaluateNumber(minNb);
+  if (minNb < maxNb) result += evaluateNumber(maxNb);
   return result;
 };
 
